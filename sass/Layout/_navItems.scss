@@ -1,0 +1,87 @@
+.nav__items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    .nav__text{
+        line-height: 70px;
+        height: 70px;   
+        color: $color-white;
+        cursor: pointer;
+        &:not(:last-child):hover {
+            .menu__title {
+                background-image: linear-gradient(to right, $color-orange, $color-white);
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+        .menu__title {
+            color: $color-white;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 700;
+            transition: 275ms ease; 
+        }
+    }
+    &--product {
+        position: relative;
+        .menu {
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            background-color: $color-black;
+            line-height: 40px;
+            display: none;
+            top: 60px;
+            &__items {
+                list-style-type: none;
+                padding: 0 20px;
+                border-bottom: 1px solid $color-dark;
+                width: 200px;
+                cursor: pointer;
+                &:hover {
+                    .menu__title--items {
+                        background-image: linear-gradient(to right, $color-orange, $color-white);
+                        color: transparent;
+                        -webkit-background-clip: text;
+                    }
+                }
+                .menu__title--items {
+                    font-size: 20px;
+                    color: $color-white;
+                    text-decoration: none;
+                    transition: 275ms ease; 
+                }
+                .menu__options {
+                    display: none;
+                    .menu__products {
+                        cursor: pointer;
+                        &:hover {
+                            a {
+                                background-image: linear-gradient(to right, $color-orange, $color-white);
+                                color: transparent;
+                                -webkit-background-clip: text; 
+                            }
+                        }
+                        
+                    }
+                    a {
+                        color: $color-white;
+                        text-decoration: none;
+                        transition: 275ms ease; 
+                }
+                }
+            }
+            &__items:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    &--social {
+        i:hover {
+            background-image: linear-gradient(to right, $color-orange, $color-white);
+            color: transparent;
+            -webkit-background-clip: text; 
+        }
+    }
+}

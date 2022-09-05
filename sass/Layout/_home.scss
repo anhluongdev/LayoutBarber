@@ -1,0 +1,213 @@
+.news {
+    padding: 30px 0;
+    background-image: url('../img/news/bg_main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .news__bg {
+        width: 70%;
+        margin: auto;
+        .news__title {
+            border-bottom: 1px solid;
+            font-size: 40px;
+        }
+        .news__content {
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .news__items {
+                width: 22%;
+                cursor: pointer;
+                .news__pic {
+                    width: 100%;
+                    height: 200px;
+                    transition: 325ms ease-in;
+                    &:hover {
+                        transform: scale(1.1);
+                        
+                    }
+                }
+                &--text {
+                    font-size: 20px;
+                    font-weight: 700;
+                    display: inline-block;
+                    transition: 275ms ease; 
+                    text-decoration: none;
+                    color: $color-black;
+                    margin: 20px 0;
+                    &:hover {
+                        color: transparent;
+                        background-image: linear-gradient(to right, $color-orange, $color-black);
+                        -webkit-background-clip: text;
+                    }
+                }
+            }
+        }
+        .news__more {
+            a {
+                background-image: url(../img/news/more.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 200px;
+                height: 70px;
+                display: block;
+                text-align: center;
+                line-height: 70px;
+                text-decoration: none;
+                color: white;
+                font-size: 25px;
+                margin: auto;
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}
+.product {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        .product__title {
+            border-bottom: 1px solid;
+            font-size: 40px;
+        }
+        .product__content {
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .product__items {
+                width: 22%;
+                cursor: pointer;
+                .product__pic {
+                    width: 100%;
+                    height: 200px;
+                }
+                &--text {
+                    font-size: 16px;
+                    font-weight: 700;
+                    display: block;
+                    text-decoration: none;
+                    color: $color-black;
+                    margin: 20px 0;
+                    text-align: center;
+                    &:hover {
+                        color: red;
+                    }
+                }
+                &--price {
+                    color: red;
+                    font-size: 20px;
+                    text-align: center;
+                    font-weight: 700;
+                }
+            }
+        }
+        .product__more {
+            margin-top: 20px;
+            a {
+                background-image: url(../img/products/bg_see.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 400px;
+                height: 40px;
+                display: block;
+                text-align: center;
+                line-height: 40px;
+                text-decoration: none;
+                color: white;
+                font-size: 25px;
+                margin: auto;
+            }
+        }
+    }
+}
+.price {
+    padding: 30px 0;
+    background-image: url('../img/news/bg_main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    .price__content{
+        width: 70%;
+        margin: 0 auto;
+        .price__title {
+            border-bottom: 1px solid;
+            font-size: 40px;
+        }
+        .price__pic {
+
+        }
+    }
+}
+.social {
+    padding: 30px 0;
+    background-image: url('../img/news/bg_main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .social__content {
+        width: 70%;
+        margin: 0 auto;
+        .social__title {
+            border-bottom: 1px solid;
+            font-size: 40px;
+        }
+        .social__pic {
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            overflow: hidden;
+            .pic__items {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 250px;
+                filter: grayscale(100%);
+                z-index: 10;
+                width: 25%;
+                cursor: pointer;
+                transition: 325ms ease-in;
+                &:hover {
+                    transform: scale(1.1);
+                    filter: grayscale(0);
+                    z-index: 0;
+                }
+            }
+            .pic__items--1 {
+                background-image: url('../img/social/social-1.jpg');
+                
+            }
+            .pic__items--2 {
+                background-image: url('../img/social/social-2.jpg');
+                
+            }
+            .pic__items--3 {
+                background-image: url('../img/social/social-3.jpg');
+                
+            }
+            .pic__items--4 {
+                background-image: url('../img/social/social-4.jpg');
+                
+            }
+            .pic__items--5 {
+                background-image: url('../img/social/social-5.jpg');
+                
+            }
+            .pic__items--6 {
+                background-image: url('../img/social/social-6.jpg');
+               
+            }
+            .pic__items--7 {
+                background-image: url('../img/social/social-7.jpg');
+                
+            }
+            .pic__items--8 {
+                background-image: url('../img/social/social-8.jpg');
+                
+            }
+        }
+    }
+}

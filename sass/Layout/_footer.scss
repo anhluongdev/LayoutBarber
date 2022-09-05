@@ -1,0 +1,105 @@
+.footer {
+    background-color: $color-black;
+    padding: 40px 0;
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+        .footer__content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            .content__list {
+                margin-top: 0;
+                line-height: 30px;
+                &--items {
+                    a {
+                        text-decoration: none;
+                        color: $color-white;
+                    }
+                }
+            }
+            .content__form {
+                width: 50%;
+                &--search {
+                    float: left;
+                    width: 45%;
+                    label {
+                        color: $color-white;
+                        display: block;
+                    }
+                    input[type=text] {
+                        display: block;
+                        margin: 20px 0;
+                        width: 100%;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        background-color: $color-dark;
+                        border-radius: 0;
+                        border: 1px solid transparent;
+                    }
+                    input[type=button] {
+                        display: block;
+                        float: right;
+                        padding: 5px;
+                        background-color: $color-dark;
+                        border-radius: 0;
+                        border: 1px solid transparent;
+                        color: $color-white;
+                        cursor: pointer;
+                    }
+                }
+                &--email {
+                    float: right;
+                    width: 45%;
+                    label {
+                        color: $color-white;
+                        display: block;
+                    }
+                    input[type=text] {
+                        display: block;
+                        margin: 20px 0;
+                        width: 100%;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        background-color: $color-dark;
+                        border-radius: 0;
+                        border: 1px solid transparent;
+                    
+                    }
+                    input[type=button] {
+                        display: block;
+                        float: right;
+                        padding: 5px;
+                        background-color: $color-dark;
+                        border-radius: 0;
+                        border: 1px solid transparent;
+                        color: $color-white;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .content__sub {
+                &--title {
+                    margin-top: 0;
+                    color: $color-white;
+                }
+                &--icon {
+                    color: $color-white;
+                    text-decoration: none;
+                    padding-right: 5px;
+                    i {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .footer__copyright {
+            color: white;
+            text-align: center;
+        }
+    }
+}
